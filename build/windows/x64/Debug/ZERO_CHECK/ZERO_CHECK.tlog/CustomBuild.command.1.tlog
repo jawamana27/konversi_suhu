@@ -1,0 +1,10 @@
+^C:\USERS\QALBI\ANDROIDSTUDIOPROJECTS\KONVERSI_SUHU\BUILD\WINDOWS\CMAKEFILES\37BEE0D647EE26FC3D3F2110706578A1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/qalbi/AndroidStudioProjects/konversi_suhu/windows -BC:/Users/qalbi/AndroidStudioProjects/konversi_suhu/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/qalbi/AndroidStudioProjects/konversi_suhu/build/windows/konversi_suhu.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
